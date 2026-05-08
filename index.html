@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Controle Financeiro</title>
+  </head>
+
+  <body>
+    <main>
+      <img src="./img/logo.png" alt="Convert logo" class="logo" />
+
+      <section>
+        <form id="input-reset" onsubmit="return false">
+          <h1>Adicionar gastos</h1>
+          <p>
+            Informe os dados dos gastos para acompanhar suas finanças. Esse
+            controle é apenas para seu uso pessoal, não se preocupe, seus dados
+            estão seguros conosco!
+          </p>
+
+          <fieldset>
+            <legend>Nome do gasto</legend>
+            <input data-gastos="spend" type="text" id="spent" name="spent" required />
+          </fieldset>
+
+          <div class="inputs-row">
+            <fieldset>
+              <legend>Categoria</legend>
+              <select data-gastos="categoria" id="category" name="category" required>
+                <option value="" disabled selected hidden>Selecione</option>
+                <option value="essencial">Essencial</option>
+                <option value="educacao">Educação</option>
+                <option value="caridade">Caridade</option>
+                <option value="investimento">Investimento</option>
+                <option value="livre">Livre</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Valor do gasto</legend>
+              <input data-gastos="valor"
+                type="text"
+                name="amount"
+                id="amount"
+                placeholder="0,00"
+                required
+              />
+            </fieldset>
+          </div>
+
+          <button data-gastos="btn-submit" type="submit">Adicionar gasto</button>
+        </form>
+
+        <aside>
+          <header>
+            <p>
+              Histórico <i>&bullet;</i>
+              <span data-gastos="quantidade">0 gastos</span>
+            </p>
+            <h2 data-gastos="total"><small>R$</small>0,00</h2>
+          </header>
+
+          <ul data-gastos="lista">
+            <li class="spent">
+              <img src="./img/essencial.svg" alt="Ícone de tipo da gasto" />
+
+              <div class="spent-info">
+                <strong>Almoço</strong>
+                <span>Essencial</span>
+              </div>
+
+              <span class="spent-amount"><small>R$</small>1.420,57</span>
+
+              <img data-gastos="remover" src="./img/remove.svg" alt="remover" class="remove-icon" />
+            </li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
