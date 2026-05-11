@@ -10,9 +10,8 @@ O objetivo do desafio era criar toda a lógica em JavaScript para um sistema sim
 
 ## Preview
 
-```bash
+
 ![Preview do projeto](img/preview.png)
-```
 
 ---
 
