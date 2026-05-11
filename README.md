@@ -1,6 +1,6 @@
 # Controle Financeiro
 
-Projeto desenvolvido como desafio prático do curso no SENAC.
+Projeto desenvolvido como desafio prático.
 
 O objetivo do desafio era criar toda a lógica em JavaScript para um sistema simples de controle financeiro, utilizando um HTML e CSS previamente disponibilizados pelo professor.
 
@@ -11,7 +11,7 @@ O objetivo do desafio era criar toda a lógica em JavaScript para um sistema sim
 ## Preview
 
 ```bash
-![Preview do projeto](./img/preview.png)
+![Preview do projeto](img/preview.png)
 ```
 
 ---
