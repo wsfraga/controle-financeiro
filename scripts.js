@@ -104,7 +104,7 @@ function atualizaTotal() {
     soma += valor;
   });
 
-  valorTotal.innerHTML = `<small>R$</small>${formatador.format(soma)}`
+  valorTotal.innerHTML = `<small>R$</small>${formatador.format(soma).replace(/\s/g, '').replace('R$', '')}`
 }
 
 atualizaTotal();
